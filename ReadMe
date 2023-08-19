@@ -1,0 +1,11 @@
+scp -i <pem_key> ApiGateway-1.0.jar ec2-user@<ec2_public_ip>:/home/ec2-user
+
+ ssh -i  <pem_key> ec2-user@<ec2_public_ip>
+ 
+sudo yum update -y 
+
+sudo yum install java-1.8.0
+
+
+ 
+ nohup java -jar ApiGateway-1.0.jar  & > log.log
