@@ -9,3 +9,7 @@ sudo yum install java-1.8.0
 
  
  nohup java -jar ApiGateway-1.0.jar  & > log.log
+ 
+ ps -eaf|grep java
+ 
+ 
